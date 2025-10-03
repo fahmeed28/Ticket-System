@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
   <div class="container">
     <a class="navbar-brand" href="#"> <i class ="fa fa-cogs"></i> Shahzad Ahmad</a>
@@ -24,12 +24,12 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class ="fa fa-user-circle"></i>  Dropdown
           </a>
-          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="index.php">Login</a></li>
             <li><a class="dropdown-item" href="Register.php">Register</a></li>
-         
+          </ul>   <!-- yahan ul properly close kiya -->
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
-</body>
-</html>
