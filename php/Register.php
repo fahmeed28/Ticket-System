@@ -7,7 +7,7 @@
           <h3 class="mb-0"><i class="fa fa-user-plus"></i> Register</h3>
         </div>
         <div class="card-body p-4">
-          <form action="ExtraPages/register_action.php" method="POST">
+          <form action="./action.php" method="POST">
             
             <!-- Full Name -->
             <div class="mb-3">

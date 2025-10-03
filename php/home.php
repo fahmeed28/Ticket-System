@@ -9,11 +9,8 @@
           <p class="lead">You have successfully logged in. This is your dashboard landing page.</p>
           
           <div class="mt-4">
-            <a href="ExtraPages/profile.php" class="btn btn-outline-warning me-2">
+            <a href="profile.php" class="btn btn-outline-warning me-2">
               <i class="fa fa-user"></i> Profile
-            </a>
-            <a href="settings.php" class="btn btn-outline-warning me-2">
-              <i class="fa fa-cog"></i> Settings
             </a>
             <a href="index.php" class="btn btn-danger">
               <i class="fa fa-sign-out"></i> Logout
