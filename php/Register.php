@@ -7,8 +7,7 @@
           <h3 class="mb-0"><i class="fa fa-user-plus"></i> Register</h3>
         </div>
         <div class="card-body p-4">
-          <form action="./action.php" method="POST">
-            
+         <form action="actions/actions.php" method="POST">
             <!-- Full Name -->
             <div class="mb-3">
               <label for="name" class="form-label">Full Name</label>
@@ -65,7 +64,7 @@
 <?php include('includes/footer.php'); ?>
 
 <!-- Inline Script just for confirm password -->
-<script>
+<!-- <script>
   const password = document.getElementById("password");
   const confirmPassword = document.getElementById("confirm_password");
   const errorMsg = document.getElementById("errorMsg");
@@ -80,4 +79,4 @@
       submitBtn.disabled = false;
     }
   });
-</script>
+</script> -->
