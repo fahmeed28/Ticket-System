@@ -7,6 +7,9 @@
           <h3 class="mb-0"><i class="fa fa-user-plus"></i> Register</h3>
         </div>
         <div class="card-body p-4">
+           <?php if(!empty($_GET['error'])) {?>
+          <strong class="text-danger"> <i class="fa fa-exclamation-triangle"></i> <?php echo $_GET['error'];?></strong>
+        <?php }?>
          <form action="actions/actions.php" method="POST">
             <!-- Full Name -->
             <div class="mb-3">

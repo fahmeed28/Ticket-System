@@ -6,16 +6,16 @@
       <div class="card shadow-lg rounded-3">
         <div class="card-body">
           <h3 class="text-center mb-4"><i class="fa fa-sign-in"></i> Login</h3>
-          <form action="" method="POST">
+          <form action="actions/login.php" method="GET">
             <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
+              <label for="email"  class="form-label">Email address</label>
               <div class="input-group">
                 <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
               </div>
             </div>
             <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
+              <label for="password" name="password" class="form-label">Password</label>
               <div class="input-group">
                 <span class="input-group-text"><i class="fa fa-lock"></i></span>
                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
