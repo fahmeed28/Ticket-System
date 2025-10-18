@@ -7,6 +7,9 @@
         <div class="card-body">
           <h3 class="text-center mb-4"><i class="fa fa-sign-in"></i> Login</h3>
           <form action="actions/login.php" method="GET">
+             <?php if(!empty($_GET['error'])) {?>
+          <strong class="text-danger"> <i class="fa fa-exclamation-triangle"></i> <?php echo $_GET['error'];?></strong>
+        <?php }?>
             <div class="mb-3">
               <label for="email"  class="form-label">Email address</label>
               <div class="input-group">
