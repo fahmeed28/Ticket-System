@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+// agar user login nahi hai to redirect karo index.php par
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,16 +22,24 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <?php if(!empty($_SESSION['name'])) { ?>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="home.php"> <i class ="fa fa-home"></i> Home</a>
         </li>
+          <?php }?>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class ="fa fa-user-circle"></i>  Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <?php if(empty($_SESSION['name'])) { ?>
             <li><a class="dropdown-item" href="index.php">Login</a></li>
             <li><a class="dropdown-item" href="Register.php">Register</a></li>
+            <?php } else 
+            { ?>
+             <li><a class="dropdown-item" href="actions/logout.php">Logout</a></li>
+             <?php } ?>
+
           </ul>   <!-- yahan ul properly close kiya -->
         </li>
       </ul>
